@@ -1,20 +1,20 @@
 .card {
   display: flex;
   flex-direction: column;
-  height: 100%; /* Ensure the card takes full height of its container */
-  border: 1px solid #ddd; /* Add border for better visualization */
-  border-radius: .25rem; /* Rounded corners */
-  overflow: hidden; /* Ensure overflow is hidden */
+  height: 100%; 
+  border: 1px solid #ddd; 
+  border-radius: .25rem; 
+  overflow: hidden; 
 
 }
 
 .card-img-top {
-  height: 200px; /* Fixed height for the image */
-  object-fit: cover; /* Maintain aspect ratio */
+  height: 200px; 
+  object-fit: cover;
 }
 
 .card-body {
-  flex: 1; /* Allow the body to grow and fill available space */
+  flex: 1;
   display: flex;
   flex-direction: column;
 }
@@ -25,7 +25,7 @@
 }
 
 .card-text {
-  flex-grow: 1; /* Allow text to grow and take available space */
+  flex-grow: 1;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -33,7 +33,7 @@
 
 .card-price {
   font-size: 1rem;
-  margin-top: auto; /* Push the price to the bottom of the card body */
+  margin-top: auto;
 }
 
 

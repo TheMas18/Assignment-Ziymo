@@ -10,7 +10,6 @@ function ProductDetail({ match }) {
       const result = await fetchProductById(productId);
       setProduct(result);
 
-      // Save to localStorage
       let recentlyViewed = JSON.parse(localStorage.getItem('recentlyViewed')) || [];
       recentlyViewed = [result, ...recentlyViewed.filter(p => p.id !== result.id)];
       localStorage.setItem('recentlyViewed', JSON.stringify(recentlyViewed));

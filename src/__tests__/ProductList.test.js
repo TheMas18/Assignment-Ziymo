@@ -1,4 +1,4 @@
-// frontend/src/__tests__/ProductList.test.js
+
 import { render, screen } from '@testing-library/react';
 import ProductList from '../components/ProductList';
 import { fetchProducts } from '../api';

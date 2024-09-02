@@ -1,5 +1,5 @@
 const request = require('supertest');
-const app = require('../server'); // Make sure server.js exports app
+const app = require('../server'); 
 
 describe('GET /products', () => {
     it('should return a list of products', async () => {

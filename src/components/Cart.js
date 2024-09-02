@@ -1,13 +1,13 @@
 import React from 'react';
 
 function Cart({ cart, updateQuantity }) {
-  // Function to calculate the total price for each item
+
   const calculateTotalPrice = (item) => {
-    const price = parseFloat(item.price) || 0; // Convert price to a number, fallback to 0 if NaN
-    return price * (item.quantity || 1); // Use quantity or default to 1
+    const price = parseFloat(item.price) || 0; 
+    return price * (item.quantity || 1); 
   };
 
-  // Function to calculate the grand total of all items in the cart
+
   const calculateGrandTotal = () => 
     cart.reduce((total, item) => total + calculateTotalPrice(item), 0);
 
